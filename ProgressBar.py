@@ -1,5 +1,5 @@
-import sys
-
+#import sys
+import os
 def get_total_work():
 	total_work = 60
 	
@@ -31,7 +31,8 @@ def print_progress(work_done_so_far, total_work):
 	# End For
 	
 	print display_string + "||",
-	sys.stdout.flush()
+	#sys.stdout.flush()
+	os.system('clear')# cls for windows
 	
 #End Function
 ######################################################################
